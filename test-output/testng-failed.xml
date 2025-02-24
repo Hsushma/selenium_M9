@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webelement.ToLearnClear">
+      <class name="webelement.ToLearngetLocation">
         <methods>
-          <include name="sendkeysmethod"/>
+          <include name="testlocation"/>
         </methods>
-      </class> <!-- webelement.ToLearnClear -->
+      </class> <!-- webelement.ToLearngetLocation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
