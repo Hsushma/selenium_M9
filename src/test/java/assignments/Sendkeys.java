@@ -27,6 +27,5 @@ public class Sendkeys
 		passwordtxt.clear();
 		passwordtxt.sendKeys("test@1234");
 		
-		driver.findElement(By.)
 	}
 }
