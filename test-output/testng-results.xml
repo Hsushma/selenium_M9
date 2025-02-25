@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-24T11:52:50 IST" name="Default suite" finished-at="2025-02-24T11:53:56 IST" duration-ms="66872">
+  <suite started-at="2025-02-25T11:07:15 IST" name="Default suite" finished-at="2025-02-25T11:07:21 IST" duration-ms="6249">
     <groups>
     </groups>
-    <test started-at="2025-02-24T11:52:50 IST" name="Default test" finished-at="2025-02-24T11:53:56 IST" duration-ms="66872">
-      <class name="webelement.ToLearngetagname">
-        <test-method signature="testlocation()[pri:0, instance:webelement.ToLearngetagname@77847718]" started-at="2025-02-24T11:52:50 IST" name="testlocation" finished-at="2025-02-24T11:53:56 IST" duration-ms="66807" status="PASS">
+    <test started-at="2025-02-25T11:07:15 IST" name="Default test" finished-at="2025-02-25T11:07:21 IST" duration-ms="6249">
+      <class name="webelement.ToLearnisSelected">
+        <test-method signature="demo()[pri:0, instance:webelement.ToLearnisSelected@77847718]" started-at="2025-02-25T11:07:15 IST" name="demo" finished-at="2025-02-25T11:07:21 IST" duration-ms="6185" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testlocation -->
-      </class> <!-- webelement.ToLearngetagname -->
+        </test-method> <!-- demo -->
+      </class> <!-- webelement.ToLearnisSelected -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
