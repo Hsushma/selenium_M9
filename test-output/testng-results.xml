@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-25T11:07:15 IST" name="Default suite" finished-at="2025-02-25T11:07:21 IST" duration-ms="6249">
+  <suite started-at="2025-02-25T11:59:14 IST" name="Default suite" finished-at="2025-02-25T11:59:20 IST" duration-ms="5788">
     <groups>
     </groups>
-    <test started-at="2025-02-25T11:07:15 IST" name="Default test" finished-at="2025-02-25T11:07:21 IST" duration-ms="6249">
-      <class name="webelement.ToLearnisSelected">
-        <test-method signature="demo()[pri:0, instance:webelement.ToLearnisSelected@77847718]" started-at="2025-02-25T11:07:15 IST" name="demo" finished-at="2025-02-25T11:07:21 IST" duration-ms="6185" status="PASS">
+    <test started-at="2025-02-25T11:59:14 IST" name="Default test" finished-at="2025-02-25T11:59:20 IST" duration-ms="5788">
+      <class name="webdrivermethods.ToLearngetwindowHandles">
+        <test-method signature="sendkeysmethod()[pri:0, instance:webdrivermethods.ToLearngetwindowHandles@77847718]" started-at="2025-02-25T11:59:14 IST" name="sendkeysmethod" finished-at="2025-02-25T11:59:20 IST" duration-ms="5722" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- demo -->
-      </class> <!-- webelement.ToLearnisSelected -->
+        </test-method> <!-- sendkeysmethod -->
+      </class> <!-- webdrivermethods.ToLearngetwindowHandles -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
