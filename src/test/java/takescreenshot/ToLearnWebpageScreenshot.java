@@ -23,10 +23,10 @@ public class ToLearnWebpageScreenshot
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://www.flipkart.com/");
 		
+		String tstamp = LocalDateTime.now().toString().replace(":", "-");
 		TakesScreenshot ts =(TakesScreenshot) driver;
-		LocalDateTime.now().toString().replace(":", "-");
 		File temp=ts.getScreenshotAs(OutputType.FILE);
-		File dest = new File("./Screenshots/image.png");
+		File dest = new File("./Screenshots/"+tstamp+".png");
 		//FileHandler.copy(temp, dest);
 		FileUtils.copyFile(temp, dest);
 		
