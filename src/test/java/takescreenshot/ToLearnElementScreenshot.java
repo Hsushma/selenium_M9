@@ -25,9 +25,10 @@ public class ToLearnElementScreenshot
 		String tmstmp=LocalDateTime.now().toString().replace(":", "-");
 		
 		driver.get("https://demowebshop.tricentis.com/login");
-		WebElement emailtxtField = driver.findElement(By.id("Email"));
-		File temp=emailtxtField.getScreenshotAs(OutputType.FILE);
-		File dest = new File("./Screenshots"+tmstmp+".png");
+		//WebElement emailtxtField = driver.findElement(By.id("Email"));
+		
+		File temp=driver.findElement(By.xpath("//strong[text()='Returning Customer']/../..")).getScreenshotAs(OutputType.FILE);
+		File dest = new File("./Screenshots/"+tmstmp+".png");
 		FileUtils.copyFile(temp, dest);
 		driver.manage().window().minimize();
 		driver.quit();
