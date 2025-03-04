@@ -14,7 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class ToLearnElementScreenshot
-{
+{                	
 	@Test
 	public static void elementscreenshot() throws IOException
 	{

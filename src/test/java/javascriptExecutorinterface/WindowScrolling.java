@@ -1,4 +1,4 @@
-package javascriptinterface;
+package javascriptExecutorinterface;
 
 import java.time.Duration;
 

@@ -1,4 +1,4 @@
-package javascriptinterface;
+package javascriptExecutorinterface;
 
 import java.time.Duration;
 
@@ -9,18 +9,20 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class LearnScrollIntoView 
+public class ToLearnDisabledElement
 {
 	@Test
-	public static void demo()
+	public static void disabledelement()
 	{
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://demoapp.skillrary.com/");
-		WebElement elemt = driver.findElement(By.xpath("//h3[text()='Latest Courses']"));
+		WebElement disabledelemt = driver.findElement(By.xpath("//input[@class='form-control']"));
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].scrollIntoView(true) ",elemt);
-	}
+		js.executeScript("arguments[0].value='selenium'", disabledelemt);
+		
 
+	}
+	
 }
