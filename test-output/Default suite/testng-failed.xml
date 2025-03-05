@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="assignments.explicitwait">
+      <class name="assignments.Dream11">
         <methods>
           <include name="explicit"/>
         </methods>
-      </class> <!-- assignments.explicitwait -->
+      </class> <!-- assignments.Dream11 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

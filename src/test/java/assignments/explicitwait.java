@@ -4,8 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.time.chrono.ChronoLocalDateTime;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -32,7 +30,7 @@ public class explicitwait
 		
 		String tmstmp = LocalDateTime.now().toString().replace(":", "-");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		WebElement message = driver.findElement(By.xpath("//p[text()='The product has been added to your ']"));
+		WebElement message = driver.findElement(By.xpath("//p[@class='content']"));
 		
 		wait.until(ExpectedConditions.visibilityOf(message));
 		
