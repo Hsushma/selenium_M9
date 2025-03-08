@@ -13,13 +13,13 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-public class iframe 
+public class ParentFrame 
 {
 	@Test
-	public static void demo() throws IOException
+	public static void iframes() throws IOException 
 	{
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -34,8 +34,22 @@ public class iframe
 		WebElement area = driver.findElement(By.xpath("//iframe[contains(@id,'map-instance')]"));
 		driver.switchTo().frame(area);
 		
-		WebElement view = driver.findElement(By.name("Montana"));
-		view.click();
+		WebElement nd = driver.findElement(By.name("North Dakota"));
+		nd.click();
+		
+		driver.switchTo().parentFrame();
+		//driver.switchTo().defaultContent();
+		driver.findElement(By.xpath("//a[text()='Sign up']")).click();
+		driver.findElement(By.xpath("//input[@id='user']")).sendKeys("sushmaprabhu@gmail.com");
+		driver.findElement(By.xpath("//input[@id='pass']")).sendKeys("sush@123");
+		driver.findElement(By.xpath("//input[@id='cpass']")).sendKeys("sush@123");
+		driver.findElement(By.xpath("//input[@id='firstName']")).sendKeys("sushma");
+		driver.findElement(By.xpath("//input[@id='lastName']")).sendKeys("prabhu");
+		
+		WebElement typedrop = driver.findElement(By.xpath("//label[text()='User Type ']"));
+		Select slt = new Select(typedrop);
+		slt.selectByVisibleText("Academic");
+		
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File temp =ts .getScreenshotAs(OutputType.FILE);
 		File pmt = new File("./Screenshots/"+tstmp+".png");
@@ -43,5 +57,4 @@ public class iframe
 		driver.manage().window().minimize();
 		driver.quit();
 	}
-
 }

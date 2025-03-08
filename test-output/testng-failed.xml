@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="assignments.Dream11">
+      <class name="dropdowns.ToLearnmultiSelect">
         <methods>
-          <include name="explicit"/>
+          <include name="multiselect"/>
         </methods>
-      </class> <!-- assignments.Dream11 -->
+      </class> <!-- dropdowns.ToLearnmultiSelect -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
