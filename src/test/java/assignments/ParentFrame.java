@@ -46,9 +46,9 @@ public class ParentFrame
 		driver.findElement(By.xpath("//input[@id='firstName']")).sendKeys("sushma");
 		driver.findElement(By.xpath("//input[@id='lastName']")).sendKeys("prabhu");
 		
-		WebElement typedrop = driver.findElement(By.xpath("//label[text()='User Type ']"));
-		Select slt = new Select(typedrop);
-		slt.selectByVisibleText("Academic");
+		WebElement typedrop = driver.findElement(By.xpath("//select[@id='user-type']"));
+		Select usertype = new Select(typedrop);
+		usertype.selectByVisibleText("Academic");
 		
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File temp =ts .getScreenshotAs(OutputType.FILE);
