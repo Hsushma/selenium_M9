@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="exam.ClassTest">
+      <class name="popups.PromptPopup">
         <methods>
-          <include name="demo"/>
+          <include name="javascriptPopup"/>
         </methods>
-      </class> <!-- exam.ClassTest -->
+      </class> <!-- popups.PromptPopup -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
