@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-17T10:30:10 IST" name="Default suite" finished-at="2025-03-17T10:30:22 IST" duration-ms="11720">
+  <suite started-at="2025-03-17T11:30:17 IST" name="Default suite" finished-at="2025-03-17T11:30:51 IST" duration-ms="33555">
     <groups>
     </groups>
-    <test started-at="2025-03-17T10:30:10 IST" name="Default test" finished-at="2025-03-17T10:30:22 IST" duration-ms="11720">
+    <test started-at="2025-03-17T11:30:17 IST" name="Default test" finished-at="2025-03-17T11:30:51 IST" duration-ms="33555">
       <class name="popups.HiddenDivisionPopup">
-        <test-method signature="hidendivisionPopup()[pri:0, instance:popups.HiddenDivisionPopup@77847718]" started-at="2025-03-17T10:30:10 IST" name="hidendivisionPopup" finished-at="2025-03-17T10:30:22 IST" duration-ms="11615" status="PASS">
+        <test-method signature="hidendivisionPopup()[pri:0, instance:popups.HiddenDivisionPopup@77847718]" started-at="2025-03-17T11:30:17 IST" name="hidendivisionPopup" finished-at="2025-03-17T11:30:51 IST" duration-ms="33494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hidendivisionPopup -->
